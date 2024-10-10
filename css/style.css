@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'A.Casual.Handwritten.Pen'; /* Nombre de la fuente que vas a usar */
+    src: url('fonts/casual.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #808080;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgb(255, 0, 0); */
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    align-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.company-name {
+    font-weight: bold;
+    color: #1B1464;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.company-description {
+    font-size: 1rem; 
+    color: #29ABE2; 
+}
+
+/* Boton add to contacts */
+
+.add-contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: #1B1464;
+    border: 1px solid #1B1464;
+    text-decoration: none;
+    /* border-radius: 50px; */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.add-contact-btn:hover {
+    background-color: #FCEE21; 
+    color: #1B1464;
+    transform: scale(1.05); 
+}
+
+.add-contact-btn:active {
+    background-color: gray;
+    transform: scale(1);
+}
+
+.add-contact-btn:focus {
+    background-color: #FFFF00;
+    outline: none; /* Elimina cualquier borde que podría aparecer al hacer clic */
+}
+
+.whatsapp-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.whatsapp-item img {
+    margin-right: 10px;
+    width: 30px;
+}
+.whatsapp-item p {
+    margin: 0; 
+    cursor: pointer; 
+    transition: color 0.3s ease, font-size 0.3s ease; 
+    font-size: 1rem; 
+    letter-spacing: 1px;
+    color: #000000; 
+}
+
+.whatsapp-item p:hover {
+    color: #000000; 
+    font-size: 18px; 
+}
+.whatsapp-item p:focus {
+    background-color: #ffffff; 
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.contact-item {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.contact-item img {
+    margin-right: 10px; 
+    width: 30px;
+}
+
+.contact-item p {
+    margin: 0; 
+    cursor: pointer; 
+    transition: color 0.3s ease, font-size 0.3s ease; 
+    font-size: 16px; 
+    color: black;
+}
+
+
+.contact-item p:hover {
+    color: #29ABE2; 
+    font-size: 18px; 
+}
+
+.contact-item p:focus {
+    background-color: #ffffff; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px; 
+    margin: 0; 
+    cursor: pointer; 
+    transition: width 0.3s ease;
+}
+
+.social-icons img:hover {
+    width: 50px; 
+}
+
+
+.footer {
+    /* margin-top: 30px; */
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.web-site a {
+    color: #1B1464;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+.web-site a:hover {
+    color: grey;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .company-name {
+        font-size: 1.5rem;
+    }
+
+    .add-contact-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    
+}
